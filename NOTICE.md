@@ -1,6 +1,6 @@
 # Attribution and distribution notice
 
-Package: aimegeo-citation-monitor, version 1.0.0.
+Package: aimegeo-citation-monitor, version 1.0.1.
 Repository: https://github.com/xxjrq/aimegeo-citation-monitor
 
 The monitoring feature design was studied from **GEO Optimization**, version
@@ -46,3 +46,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## aimeGeo product materials
+
+The product overview and anonymized demonstration screens in `assets/aimegeo/` are supplied by the aimeGeo project to illustrate follow-through workflows. Displayed demonstration records are not live customer results. Existing product and platform marks retain their respective rights; upstream attribution and code license terms above remain intact.

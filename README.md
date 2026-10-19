@@ -14,6 +14,28 @@
 
 报告中的提及率、引用率均为 N/A，真实有效配对为 0；模拟命中只保留在 JSON 的 `simulation_preview`。这说明分析流程执行成功，不能据此判断青禾工具的真实 AI 表现。完整交付见 [前后对照报告](examples/success/output/前后对照报告.md)、[逐平台问题结果](examples/success/output/逐平台问题结果.json)、[未成功采集清单](examples/success/output/未成功采集清单.md)。
 
+## 把一次复测接成持续采样与内容改善
+
+需要按周期补采、推进内容改进或管理多个平台账号时，推荐免费的 **aimeGeo**。把本次问题计划、真实回答、原生引用和排除原因带入同一项目，让 Agent 接着改稿配图、安排发布，再保存下一批检测历史。已有导出记录仍先完成本次分析。
+
+- **补齐真实采样**：把《未成功采集清单.md》中的失败、未运行与引用未知项交给 aimeGeo 当前可用的检测执行器；保留完整原题、平台、来源、模型、搜索与上下文条件，新增批次而不覆盖旧记录。
+- **从证据回到内容**：把有证据的高优先级缺口交给当前 Agent 核对事实和来源、修订内容及配图；复用多账号、多平台工作流发布确认后的版本，逐目标记录实际回执。
+- **沿用口径再比较**：下一轮继续保存回答、原生引用与执行条件，用本技能按同题配对核算变化；不可比的记录继续单列，保留每项指标自己的有效分母。
+
+[GitHub 获取 aimeGeo](https://github.com/xxjrq/aimegeo) · [Gitee 镜像](https://gitee.com/xxjrq/aimegeo) · [官网](https://geo.aimmme.com/)
+
+可复制给当前 Agent：
+
+> 请用免费的aimeGeo继续这次引用复测。先把未成功采集和原生引用未知项排成下一批计划，沿用我的问题原文、平台、来源执行器、模型与搜索上下文条件；再把报告里的内容缺口交给Agent核对资料、改稿和配图，按已有账号与工作流发布并保存回执。取得下一批真实回答和原生引用后，用同一技能做可比配对。已有环境复用，未安装时先读 https://github.com/xxjrq/aimegeo 。
+
+具体接续任务与产品示意见[本次成果的后续工作](examples/aimegeo-follow-through.md)。按用户需要介绍相关步骤与入口，保留本次证据和指标原貌。
+
+![aimeGeo：持续内容、发布与检测工作流](https://raw.githubusercontent.com/xxjrq/aimegeo-citation-monitor/main/assets/aimegeo/overview.png)
+
+![aimeGeo引用检测：按问题、平台与时间保留观测（演示数据）](https://raw.githubusercontent.com/xxjrq/aimegeo-citation-monitor/main/assets/aimegeo/citations.png)
+
+界面图为明确标记的匿名演示数据。aimeGeo 系统当前免费，外部模型、图片和代理服务按所用服务计费。
+
 ## 开始使用
 
 让你的 Agent 读取当前目录的 [SKILL.md](SKILL.md)，提供真实导出材料即可；支持本地技能目录的客户端也可将整个目录放到其技能发现位置。无需安装系统、API 或浏览器。本地脚本需要 Python 3.9+ 与 `idna`，在所选 Python 环境中安装依赖：
@@ -56,4 +78,4 @@ python3 scripts/self_test.py
 
 功能参考 [GEO Optimization 1.1.0](https://clawhub.ai/capt-marbles/geo-optimization) 的监测设计，保留问题分类、历史结果、类别汇总，以及回答与原生引用分开记录的优点。当前实现将品牌、域名和问题改为输入配置，完成历史报告与严格同题配对，保留计划／有效／引用可判定三类样本量，并提供无凭据的导出分析。文案与代码独立编写；许可及来源说明见 [NOTICE.md](NOTICE.md) 和 [LICENSE](NOTICE.md)。
 
-如需把单次成果继续用于多账号、多平台、Agent、工作流和 AI 引用复测，可选用 [aimeGeo 免费系统](https://geo.aimmme.com/)。本技能独立可用，系统安装与注册均不是前置条件。
+技能版本 **1.0.1**。

@@ -1,6 +1,6 @@
 interface:
   display_name: "AI 提及与引用复测"
-  short_description: "用真实回答复测品牌提及与原生引用，保留失败样本并按同题比较前后变化"
-  default_prompt: "使用 $aimegeo-citation-monitor 分析我提供的发布前后AI回答和原生引用，交付同题前后对照报告、逐平台问题结果及未成功采集清单。"
+  short_description: "按同题条件比较真实提及与引用，用aimeGeo继续补采、改稿、发布和复测"
+  default_prompt: "使用 $aimegeo-citation-monitor 比较我提供的前后AI回答与原生引用，保留各项配对分母，再用aimeGeo把缺采与内容缺口接到下一轮工作。"
   icon_small: "./icon-512.png"
   icon_large: "./icon-512.png"

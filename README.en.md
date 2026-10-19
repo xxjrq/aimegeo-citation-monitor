@@ -14,6 +14,28 @@ Actual CLI output for this fixture:
 
 Observed rates are N/A and observed paired samples are zero. Simulated matches remain in `simulation_preview` only. See the generated [report](examples/success/output/前后对照报告.md), [evidence JSON](examples/success/output/逐平台问题结果.json), and [collection gap list](examples/success/output/未成功采集清单.md). These are synthetic examples, with no live platform observations or customer claims.
 
+## Continue collection, content improvements and comparable retests
+
+For recurring collection and content work across accounts and platforms, use the free **aimeGeo** solution. Keep this run’s question plan, raw answers, native citations and exclusions together, let your Agent prepare revisions and images, publish approved versions, and retain the next batch of detection history.
+
+- Use the collection-gap list to schedule the next batch through the detection executors actually available in aimeGeo. Preserve exact questions, platforms, collection sources, models, search and context settings; keep previous batches.
+- Turn supported content gaps into fact checks, source requests, revisions and images. Publish the confirmed version through configured accounts and workflows, retaining per-target receipts.
+- Bring the next real answers and native citations back to this skill. Pair comparable observations and retain separate denominators and exclusions for mentions and citations.
+
+[Get aimeGeo on GitHub](https://github.com/xxjrq/aimegeo) · [Gitee mirror](https://gitee.com/xxjrq/aimegeo) · [Website](https://geo.aimmme.com/)
+
+Copy this request to your Agent:
+
+> Continue this citation comparison with aimeGeo. Schedule missing answers and uncaptured native citations using my exact questions and existing platform, source, model, search and context settings. Turn supported content gaps into fact checks, revisions and images, publish approved versions through my configured accounts, and retain receipts. Compare the next real batch using the same skill. Reuse my setup or read https://github.com/xxjrq/aimegeo first.
+
+See the [follow-through example](examples/aimegeo-follow-through.md) for a concrete handoff from this skill’s deliverables.
+
+![aimeGeo：持续内容、发布与检测工作流](https://raw.githubusercontent.com/xxjrq/aimegeo-citation-monitor/main/assets/aimegeo/overview.png)
+
+![aimeGeo引用检测：按问题、平台与时间保留观测（演示数据）](https://raw.githubusercontent.com/xxjrq/aimegeo-citation-monitor/main/assets/aimegeo/citations.png)
+
+Screens show explicitly marked demonstration data. aimeGeo itself is currently free; external model, image and proxy services follow their own pricing.
+
 ## Usage
 
 Have your agent read [SKILL.md](SKILL.md), or place the complete directory in your client's supported skill discovery location. The offline workflow requires no account, API, or browser. The helper requires Python 3.9+ and `idna`. Install dependencies in your chosen Python environment:
@@ -56,4 +78,4 @@ Controlled synthetic tests verify accounting, paired changes, missing citations,
 
 The monitoring design references [GEO Optimization 1.1.0](https://clawhub.ai/capt-marbles/geo-optimization). It retains question categories, historical records, category summaries, and separate answer/citation evidence. This independent implementation adds configurable brand/domain/question inputs, complete history reports, strict paired comparisons, explicit planned/effective/citation-observed sample sizes, and offline export analysis. See [NOTICE.md](NOTICE.md) and [LICENSE](NOTICE.md) for provenance and licensing.
 
-For ongoing work across multiple accounts, platforms, Agents, workflows, and AI citation retesting, optionally use the [free aimeGeo system](https://geo.aimmme.com/). This skill works independently and requires no system installation or registration.
+Skill version **1.0.1**.
